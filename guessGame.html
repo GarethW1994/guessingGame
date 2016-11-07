@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Number Guess Game</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+        <div class="table">
+        <table>
+            <td>Enter your number here:</td>
+            <td><input type="text" id="number" size="10" placeholder="Your guess..." autofocus/></td>
+            <td><button class="buttonGuess" id="play" onclick="validateInput()">Guess</button></td>
+        </table>
+    </div>
+    <div class="blockThree">
+        <div class="heading3">
+            <h3>Your Output</h3>
+        </div>
+
+
+        <div class="paragraph">
+            <p>The number Guesses left: <span id="guessLeft">5</span></p>
+            <p>Your number of Guesses: <span id="yourGuess">...</span></p>
+            <p>The number you gave was: <span id="yourNum">...</span></p>
+            <p>The random number was: <span id="random">...</span></p>
+        </div>
+        <br/>
+        <center>
+            <div id="stage">
+                <div class="winnerimg"></div>
+                <div class="defaultimg"></div>
+                <div class="loseimg"></div>
+            </div>
+                <h5 id="output">output</h5>
+            
+            <button class="buttonTryAgain" onclick="clearItems()">Try Again!</button>
+        </center>
+        
+        <div id = "rulesButton" onclick="showRules()">Click For Rules Of Game</div>
+    </div>
+    
+    <div id  = "rulesBlock"> 
+    <div class="heading">
+        <h3>Number Guessing Game</h3>
+    </div>
+    <div class="blockOne">
+        <div class="paragraph">
+            <p>This game works on generating random numbers and you guess through input what the random number is from 0 - 20.
+                <br/>
+                <br/>
+            </p>
+        </div>
+
+        <div class="secondHeading">
+            <h4>GOT IT? GOOD.</h4>
+            <br/>
+            <h4>BUT WAIT!</h4>
+        </div>
+    </div>
+   
+    <div class="blockTwo">
+        <div class="heading2">
+            <h3>Here's the deal</h3>
+        </div>
+        <div class="paragraph">
+            <p>In order to keep you from guessing forever and ever. I will limit your number of guesses to say 5 rounds... That sounds about right! Let's record the number of guesses you make too.</p>
+        </div>
+
+        <div class="secondHeading">
+            <h4>LET'S GIVE IT A TRY</h4>
+        </div>
+    </div>
+ </div>
+    
+</body>
+<script src="guessNumber.js" charset="utf-8"></script>
+
+</html>

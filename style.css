@@ -1,0 +1,221 @@
+* {
+    margin: 0;
+    font-family: segoe ui light, arial, sans-serif;
+}
+
+#rulesBlock {
+    opacity: 0;
+    margin-top: 5em;
+    
+    -webkit-transition: 3s;
+
+}
+.blockOne {
+    width: 350px;
+    margin-left: 6em;
+    background-color: skyblue;
+    height: 170px;
+}
+
+.blockTwo {
+    width: 350px;
+    margin-left: 6em;
+    background-color: lightgreen;
+    height: 170px;
+}
+
+.blockThree {
+    width: 350px;
+    margin-left: 6em;
+    background-color: lightcoral;
+    height: 250px;
+    clear: both;
+}
+
+.heading {
+    color: lightgrey;
+    text-align: center;
+    background-color: steelblue;
+    width: 350px;
+    margin-left: 6em;
+    margin-top: 1em;
+}
+
+.heading2 {
+    color: lightgrey;
+    text-align: center;
+    background-color: darkgreen;
+    width: 350px;
+    margin-top: 1em;
+}
+
+.heading3 {
+    color: lightgrey;
+    text-align: center;
+    background-color: maroon;
+    width: 350px;
+    margin-top: 1em;
+}
+
+.paragraph {
+    width: 300px;
+    margin-left: 1em;
+}
+
+#guessLeft {
+    font-family: sans-serif;
+    color: darkblue;
+    margin-left: 1.8em;
+}
+
+#yourGuess {
+    font-family: sans-serif;
+    color: darkred;
+    margin-left: 1.8em;
+}
+
+#yourNum {
+    font-family: sans-serif;
+    color: white;
+    margin-left: 1em;
+}
+
+#random {
+    font-family: sans-serif;
+    color: white;
+    margin-left: 1.5em;
+}
+
+.secondHeading {
+    text-align: center;
+    color: darkgreen;
+    margin-bottom: 1em;
+}
+
+h5 {
+    text-align: center;
+    margin-bottom: 0.5em;
+}
+
+.table {
+    margin-left: 7em;
+    margin-top: 1em;
+    width: 350px;
+    clear: both;
+}
+
+.buttonGuess{
+    color: white;
+    font-family: Arial;
+    cursor: pointer;
+    
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    background:-webkit-linear-gradient(top, #a3a3a3, #000);
+    background:-moz-linear-gradient(top, #a3a3a3, #000);
+    background: linear-gradient(top, #a3a3a3, #000);
+    
+    -webkit-box-shadow: 4px 4px 4px rgba(0,0,0,0.5);
+     -moz-box-shadow: 4px 4px 4px rgba(0,0,0,0.5);
+    box-shadow: 5px 6px 2px rgba(0,0,0,0.5);
+    
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+.buttonGuess:hover {
+    background: -webkit-linear-gradient(top, darkgreen, #506651);
+    background: -mox-linear-gradient(top, darkgreen, #506651);
+    background: linear-gradient(top, darkgreen, #506651);
+}
+
+.buttonGuess:active {
+    background: -webkit-linear-gradient(top, lightgreen, grey);
+    background: -moz-linear-gradient(top, lightgreen, grey);
+    background: linear-gradient(top, lightgreen, grey);
+}
+
+.buttonTryAgain{
+    color: white;
+    font-family: Arial;
+    cursor: pointer;
+    
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    background:-webkit-linear-gradient(top, #a3a3a3, #000);
+    background:-moz-linear-gradient(top, #a3a3a3, #000);
+    background: linear-gradient(top, #a3a3a3, #000);
+    
+    -webkit-box-shadow: 4px 4px 4px rgba(0,0,0,0.5);
+     -moz-box-shadow: 4px 4px 4px rgba(0,0,0,0.5);
+    box-shadow: 5px 6px 2px rgba(0,0,0,0.5);
+    
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+.buttonTryAgain:hover {
+    background: -webkit-linear-gradient(top, darkorange, grey);
+    background: -moz-linear-gradient(top, darkorange, grey);
+    background: linear-gradient(top, darkorange, grey);
+}
+
+.buttonTryAgain:active {
+    background: -webkit-linear-gradient(top, gold, grey);
+    background: -mox-linear-gradient(top, gold, grey);
+    background: linear-gradient(top, gold, grey);
+}
+
+#rulesButton {
+    background-color: darkorange;
+    color: #fff;
+    width: 180px;
+    height: 25px;
+    text-align: center;
+    margin-left: 5em;
+    margin-top: 2em;
+    -webkit-border-radius: 0.4em;
+    -moz-border-radius: 0.4em;
+    border-radius: 0.4em;
+}
+
+#rulesButton:hover{
+    cursor: pointer;
+    background-color: darkgreen;
+}
+.defaultimg {
+    width: 50px;
+    height: 50px;
+    background-image: url('Images/confused.png');
+    background-size: cover;
+    margin-bottom: 1em;
+    /*Transition*/
+    -webkit-transition: ease-out 1s;
+}
+
+.winnerimg {
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+    margin-bottom: 1em;
+    background-image: url(Images/happy.png);
+    opacity: 0;
+    -webkit-transition: ease-out 1s;
+}
+
+.loseimg {
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+    margin-bottom: 1em;
+    opacity: 0;
+    background-image: url(Images/unhappy.png);
+}
+
+#stage {
+    display: inline-flex;
+}
